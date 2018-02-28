@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/global.css') }}">
+	<link rel="icon" href= "{{ url_for('static',filename='images/favicon-32x32.png') }}" sizes="32x32">
+	<title>Bobst</title>
+</head>
+<body>
+
+	<div id="header">
+		<div id="top">
+			<div class="hold">
+				<a href="#">About Us</a> 
+				<a href="#contact" data-toggle="collapse">Contact</a>
+				<a href="#">v 1.0</a>
+			</div>
+			<div id="contact" class="collapse">
+					<code>hr@innoctive.com / +91 - 8329083054 </code>
+			</div>
+		</div>
+	<!--end of top 3 links-->
+		<div class="hold">
+			<div class="logo"><a><img src="/static/images/bobst.png" style="width: 52%; height: 65%" alt="" /></a>
+			</div>
+
+			<div class="clear">
+			</div>
+		</div>
+	</div>
+<!--end of top header-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+		    <div class="col-md-8">
+
+			  		<form class="form-horizontal" action="/workorder" method="POST">
+			    		<div class="form-group">
+			      			Select a file to upload:
+							<input type="file" id="myFile" size="200">
+							<p></p>
+							<p></p>
+
+						<p>Upload the PDF downloaded from SAP, the system with auto parse the PDF, extract information and generate a work order.</p>
+			    		</div>
+			    		
+			    		<div class="form-group">        
+			      			<div class="col-sm-offset-4 col-md-8">
+			        			<button type="submit" id="workorder" class="btn btn-default">Complete Upload</button>
+			      			</div>
+			    		</div>
+			  		</form>
+
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+
+</body>
+</html>

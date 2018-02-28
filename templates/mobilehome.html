@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/global.css') }}">
+	<link rel="icon" href= "{{ url_for('static',filename='images/favicon-32x32.png') }}" sizes="32x32">
+	<title>Bobst</title>
+</head>
+<body>
+
+	<div class="container">
+		<form class="form-horizontal" action="/mobiletime" method="POST">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+				        <h1><span class="label label-default">Mobile Home</span></h1>
+
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-md-12 text-center">
+				      <div class="img-rounded">
+				        <a target="_blank">
+				          <img src="/static/images/mobilehome.png" alt="Portal" style="height:30%;width:30%">
+				        </a>
+				      </div>
+				    </div>
+			</div>
+						<div class="row">
+				<div class="col-md-12 text-center">
+			<p style="color:red">Technician will get an alert for every work order processed against him by admin in the portal</p>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+
+				        <a class="center">
+				        	<button type="submit" id="mobiletime" class="btn btn-default">Enter Time</button>
+				        </a>
+
+				</div>
+			</div>	
+		</form>	
+	</div>
+
+</body>
+</html>
