@@ -8,15 +8,3 @@ MarkupSafe==1.0
 MySQL-python==1.2.5
 python-dateutil==1.5
 SQLAlchemy==1.1.9
-Werkzeug==0.12.1
-requests==2.18.0
-passlib==1.7.1
-pytz==2017.2
-wkhtmltopdf-pack==0.12.3.0
-pdfkit==0.6.1
-imgkit==0.1.7
-Pillow==4.3.0
-boto3==1.4.7
-plivo==0.11.3
-sendgrid==5.3.0
-pytransloadit==0.1.7
